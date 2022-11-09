@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
 .mb-01 {
   margin-bottom: 0.25rem;
 }
@@ -64,7 +64,7 @@
 }
 
 .heading-01 {
-  font-size: clamp(1.5rem, 3vw, 3.4rem);
+  font-size: clamp(1.4rem, 2.5vw, 3.4rem);
 }
 
 .heading-02 {
@@ -82,7 +82,7 @@
 
 .desc-02 {
   font-size: clamp(1rem, 1.3vw, 1rem);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .desc-01, .desc-02 {
@@ -96,6 +96,10 @@
 
 .m-00 {
   margin: 0;
+}
+
+.p-00 {
+  padding: 0;
 }
 
 .w-100 {
@@ -112,5 +116,83 @@
 
 .text-right {
   text-align: right;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  max-width: 1920px;
+  min-width: 300px;
+  background-color: #f4f5f6;
+  padding: 130px 0px 10px;
+}
+
+.footer-cont {
+  max-width: 1500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 20px 60px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.footer-logo {
+  max-width: 420px;
+}
+
+.footer-logo .svg {
+  max-width: 251px;
+}
+
+.footer-logo .desc-01 {
+  line-height: 160%;
+}
+
+.footer-nav {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-nav .ul {
+  margin: 0px 0px 0px 0px;
+  width: 197px;
+}
+
+.footer-nav .ul-li {
+  margin: 10px 0px;
+  list-style: none;
+  color: #010f1c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 160%;
+}
+
+.footer-nav .ul-li a {
+  color: #010f1c;
+}
+
+.footer-nav .ul-li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.footer-nav .ul-li img {
+  margin: 10px;
+}
+
+.footer-nav .ul-li:nth-child(1) {
+  color: #000;
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=home.css.map */

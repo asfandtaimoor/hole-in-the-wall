@@ -1,1 +1,67 @@
 @import 'common.scss';
+// text color
+$text-black: #000;
+$text-dark-black: #010f1c;
+$text-white: #fff;
+$text-dark-white: #949494;
+// list li dot color
+$list-li-color: #9e559e;
+// button color
+$btn-yelo: rgba(253, 202, 49, 1);
+$btn-red: rgba(235, 52, 46, 1);
+// bg color
+$bg-color: #f4f5f6;
+a {
+  text-decoration: none;
+}
+.footer {
+  max-width: 1920px;
+  min-width: 300px;
+  background-color: $bg-color;
+  padding: 130px 0px 10px;
+  &-cont {
+    max-width: 1500px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px 60px;
+    border-bottom: 1px solid rgba(201, 201, 201, 1);
+  }
+  &-logo {
+    max-width: 420px;
+    .svg {
+      max-width: 251px;
+    }
+    .desc-01 {
+      line-height: 160%;
+    }
+  }
+  &-nav {
+    flex-wrap: wrap;
+    .ul {
+      margin: 0px 0px 0px 0px;
+      width: 197px;
+
+      &-li {
+        margin: 10px 0px;
+        list-style: none;
+        color: $text-dark-black;
+        align-items: center;
+        line-height: 160%;
+        a {
+          color: $text-dark-black;
+          &:hover {
+            text-decoration: underline;
+            color: blue;
+          }
+        }
+        img {
+          margin: 10px;
+        }
+      }
+    }
+    .ul-li:nth-child(1) {
+      color: $text-black;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
