@@ -1,0 +1,123 @@
+// spacing
+$spacing-01: 0.25rem; // 4px
+$spacing-02: 0.5rem; // 8px
+$spacing-03: 0.75rem; // 12px
+$spacing-04: 1rem; // 16px
+$spacing-05: 1.25rem; // 20px
+$spacing-06: 1.5rem; // 24px
+$spacing-07: 2rem; // 32px
+$spacing-08: 2.5rem; // 40px
+$spacing-09: 3rem; // 48px
+$spacing-10: 3.375rem; // 54px
+$spacing-11: 4rem; // 64px
+$spacing-12: 4.5rem; // 72px
+$spacing-13: 5rem; // 80px
+$spacing-14: 6rem; // 96px
+
+.mb {
+  &-01 {
+    margin-bottom: $spacing-01;
+  }
+  &-02 {
+    margin-bottom: $spacing-02;
+  }
+  &-03 {
+    margin-bottom: $spacing-03;
+  }
+  &-04 {
+    margin-bottom: $spacing-04;
+  }
+  &-05 {
+    margin-bottom: $spacing-05;
+  }
+  &-06 {
+    margin-bottom: $spacing-06;
+  }
+  &-07 {
+    margin-bottom: $spacing-07;
+  }
+  &-08 {
+    margin-bottom: $spacing-08;
+  }
+  &-09 {
+    margin-bottom: $spacing-09;
+  }
+  &-10 {
+    margin-bottom: $spacing-10;
+  }
+  &-11 {
+    margin-bottom: $spacing-11;
+  }
+  &-12 {
+    margin-bottom: $spacing-12;
+  }
+  &-13 {
+    margin-bottom: $spacing-13;
+  }
+  &-14 {
+    margin-bottom: $spacing-14;
+  }
+}
+
+.ts {
+  &-title-01 {
+    font-size: clamp(1rem, 3vw, 2.5rem);
+  }
+  &-title-02 {
+    font-size: clamp(1rem, 4vw, 3rem);
+  }
+  &-title-03 {
+    font-size: clamp(1.3rem, 4.5vw, 3.5rem);
+  }
+  &-title-04 {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+  }
+  &-title-05 {
+    font-size: clamp(2rem, 5.2vw, 4.5rem);
+  }
+  &-title-06 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+  }
+  //   description style
+  &-desc-01 {
+    font-size: clamp(1rem, 1vw, 1.1rem);
+  }
+  &-desc-02 {
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+  }
+  &-desc-03 {
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+  }
+  &-desc-04 {
+    font-size: clamp(1rem, 1.8vw, 1.6rem);
+  }
+  &-desc-05 {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+  }
+  &-desc-06 {
+    font-size: clamp(1rem, 2.2vw, 2rem);
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+.m {
+  &-00 {
+    margin: 0;
+  }
+}
+.w-100 {
+  width: 100%;
+}
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-start {
+    text-align: start;
+  }
+  &-right {
+    text-align: right;
+  }
+}
