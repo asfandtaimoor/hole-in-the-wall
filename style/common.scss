@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,300;1,400&display=swap');
 // spacing
 $spacing-01: 0.25rem; // 4px
 $spacing-02: 0.5rem; // 8px
@@ -59,44 +62,72 @@ $spacing-14: 6rem; // 96px
   }
 }
 
-.ts {
-  &-title-01 {
-    font-size: clamp(1rem, 3vw, 2.5rem);
+// text color
+$text-black: #000;
+$text-dark-black: #010f1c;
+$text-white: #fff;
+$text-dark-white: #949494;
+// list li dot color
+$list-li-color: #9e559e;
+// button color
+$btn-yelo: rgba(253, 202, 49, 1);
+$btn-red: rgba(235, 52, 46, 1);
+.heading {
+  &-01,
+  &-02,
+  &-03 {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Sriracha';
   }
-  &-title-02 {
-    font-size: clamp(1rem, 4vw, 3rem);
+  &-01 {
+    font-size: clamp(1.4rem, 2.5vw, 3.4rem);
   }
-  &-title-03 {
-    font-size: clamp(1.3rem, 4.5vw, 3.5rem);
+  &-02 {
+    font-size: clamp(1.2rem, 2vw, 2.8rem);
   }
-  &-title-04 {
-    font-size: clamp(1.5rem, 5vw, 4rem);
+  &-03 {
+    font-size: clamp(1rem, 2vw, 2rem);
   }
-  &-title-05 {
-    font-size: clamp(2rem, 5.2vw, 4.5rem);
+
+  //   &-heading-04 {
+  //     font-size: clamp(1.5rem, 5vw, 4rem);
+  //   }
+  //   &-heading-05 {
+  //     font-size: clamp(2rem, 5.2vw, 4.5rem);
+  //   }
+  //   &-heading-06 {
+  //     font-size: clamp(2.5rem, 6vw, 5rem);
+  //   }
+}
+//   description style
+
+.desc {
+  &-01 {
+    font-size: clamp(1rem, 1vw, 1rem);
+    font-weight: 400;
   }
-  &-title-06 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
+  &-02 {
+    font-size: clamp(1rem, 1.3vw, 1rem);
+    font-weight: 500;
   }
-  //   description style
-  &-desc-01 {
-    font-size: clamp(1rem, 1vw, 1.1rem);
+  &-01,
+  &-02 {
+    font-family: 'Roboto';
+    font-style: normal;
   }
-  &-desc-02 {
-    font-size: clamp(1rem, 1.3vw, 1.2rem);
-  }
-  &-desc-03 {
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
-  }
-  &-desc-04 {
-    font-size: clamp(1rem, 1.8vw, 1.6rem);
-  }
-  &-desc-05 {
-    font-size: clamp(1rem, 2vw, 1.8rem);
-  }
-  &-desc-06 {
-    font-size: clamp(1rem, 2.2vw, 2rem);
-  }
+  //   &-03 {
+  //     font-size: clamp(1rem, 1.5vw, 1.4rem);
+  //   }
+  //   &-04 {
+  //     font-size: clamp(1rem, 1.8vw, 1.6rem);
+  //   }
+  //   &-05 {
+  //     font-size: clamp(1rem, 2vw, 1.8rem);
+  //   }
+  //   &-06 {
+  //     font-size: clamp(1rem, 2.2vw, 2rem);
+  //   }
 }
 
 .m-auto {

@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=home.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,100;1,300;1,400&display=swap");
+.mb-01 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-02 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-03 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-04 {
+  margin-bottom: 1rem;
+}
+
+.mb-05 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-06 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-07 {
+  margin-bottom: 2rem;
+}
+
+.mb-08 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-09 {
+  margin-bottom: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 3.375rem;
+}
+
+.mb-11 {
+  margin-bottom: 4rem;
+}
+
+.mb-12 {
+  margin-bottom: 4.5rem;
+}
+
+.mb-13 {
+  margin-bottom: 5rem;
+}
+
+.mb-14 {
+  margin-bottom: 6rem;
+}
+
+.heading-01, .heading-02, .heading-03 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Sriracha';
+}
+
+.heading-01 {
+  font-size: clamp(1.5rem, 3vw, 3.4rem);
+}
+
+.heading-02 {
+  font-size: clamp(1.2rem, 2vw, 2.8rem);
+}
+
+.heading-03 {
+  font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.desc-01 {
+  font-size: clamp(1rem, 1vw, 1rem);
+  font-weight: 400;
+}
+
+.desc-02 {
+  font-size: clamp(1rem, 1.3vw, 1rem);
+  font-weight: 500;
+}
+
+.desc-01, .desc-02 {
+  font-family: 'Roboto';
+  font-style: normal;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-00 {
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-right {
+  text-align: right;
+}
+/*# sourceMappingURL=home.css.map */
