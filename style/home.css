@@ -169,6 +169,11 @@ a {
   color: #fff;
 }
 
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
 .contact {
   padding: 130px 0px;
   -webkit-box-pack: center;
@@ -201,14 +206,14 @@ a {
 
 .contact-form .email__input {
   width: 100%;
-  padding: 19px 0px 22px 21px;
+  padding: 19px 0px 19px 21px;
   border-radius: 50px;
   color: #949494;
 }
 
 .contact-form .email__btn {
   position: absolute;
-  top: 10%;
+  top: 12%;
   right: -3%;
 }
 
@@ -235,6 +240,87 @@ a {
 
 .contact-icons .fab:hover {
   background-color: #fdca31;
+}
+
+@media (max-width: 1560px) {
+  .contact-form {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 100px 0px;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 100px 0px;
+    border-radius: 0px;
+  }
+  .contact-form .email {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+  }
+  .contact-form .email__input {
+    padding: 15px 0px 15px 21px;
+  }
+  .contact-form .email__btn {
+    top: 10%;
+    right: -5%;
+    padding: 10px 20px;
+  }
+  .contact-icons {
+    margin-top: 40px;
+  }
+  .contact-icons .fab {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .contact {
+    padding: 80px 0px;
+  }
+  .contact-form {
+    padding: 80px 0px;
+  }
+  .contact-form .email {
+    max-width: 60%;
+  }
+  .contact-form .email__input {
+    padding: 12px 0px 12px 15px;
+  }
+  .contact-form .email__btn {
+    position: absolute;
+    top: 8%;
+    right: -3%;
+    padding: 8px 11px;
+  }
+}
+
+@media (max-width: 490px) {
+  .contact {
+    padding: 70px 0px;
+  }
+  .contact-form {
+    padding: 60px 0px;
+  }
+  .contact-form .heading-01 {
+    margin: 0px 0px 10px 0px;
+  }
+  .contact-form .email {
+    max-width: 90%;
+  }
+  .contact-form .email__input {
+    padding: 10px 0px 10px 10px;
+  }
+  .contact-form .email__btn {
+    position: absolute;
+    top: 12%;
+    right: -1%;
+    padding: 5px 10px;
+  }
 }
 
 .footer {
