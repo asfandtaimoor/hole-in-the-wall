@@ -49,6 +49,41 @@ body {
   padding: 0%;
 }
 
+// about section
+.about {
+  min-width: 300px;
+  padding: 130px 0px;
+  &-content {
+    max-width: 1560px;
+    .card-01 {
+      max-width: 810px;
+    }
+    .card-02 {
+      max-width: 679px;
+    }
+  }
+  &-counter {
+    max-width: 1260px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
+
+    .card {
+      text-align: center;
+      padding: 0px 30px;
+      width: 129px;
+      margin: 0 auto;
+      .heading-01 {
+        margin: 0px;
+      }
+      .desc-01 {
+        margin: 0;
+        color: #010f1c;
+      }
+    }
+  }
+}
+
 // days section
 .days {
   max-width: 1920px;
