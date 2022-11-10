@@ -123,4 +123,12 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.t-white {
+  color: white;
+}
+
+.t-black {
+  color: black;
+}
 /*# sourceMappingURL=common.css.map */

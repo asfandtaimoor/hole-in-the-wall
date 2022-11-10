@@ -7,20 +7,51 @@ $text-dark-white: #949494;
 // list li dot color
 $list-li-color: #9e559e;
 // button color
-$btn-yelo: rgba(253, 202, 49, 1);
+$btn-yellow: rgba(253, 202, 49, 1);
 $btn-red: rgba(235, 52, 46, 1);
 // bg color
 $bg-color: #f4f5f6;
 a {
   text-decoration: none;
 }
-.footer {
+.btn-yellow {
+  padding: 11px 20px;
+  background-color: $btn-yellow;
+  border-radius: 50px;
+  color: $text-black;
+}
+// contact form section
+.contact {
+  padding: 130px 0px;
+  justify-content: center;
   max-width: 1920px;
+  min-width: 300px;
+  border: 1px solid red;
+  &-form {
+    background-image: url('../bg/contact.jpg');
+    max-width: 1560px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 60px 0px;
+    .heading-01 {
+      color: $text-white;
+    }
+  }
+  &-icons {
+    margin-top: 50px;
+  }
+}
+
+// footer section style
+.footer {
   min-width: 300px;
   background-color: $bg-color;
   padding: 130px 0px 10px;
   &-cont {
-    max-width: 1500px;
+    max-width: 1560px;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0px 20px 60px;
@@ -55,7 +86,7 @@ a {
           }
         }
         img {
-          margin: 10px;
+          margin: 8px 10px 0px 0px;
         }
       }
     }
