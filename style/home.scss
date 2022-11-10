@@ -48,6 +48,60 @@ body {
   margin: 0%;
   padding: 0%;
 }
+
+// days section
+.days {
+  max-width: 1920px;
+  min-width: 300px;
+  padding: 112px;
+  background-image: url('../bg/days.jpg');
+  background-position: center;
+  background-size: cover;
+  &-card {
+    max-width: 598px;
+    padding: 40px 50px;
+    margin-left: auto;
+    border-radius: 20px;
+    background: rgba(35, 7, 6, 0.655);
+    .heading-02 {
+      margin: 0px;
+      line-height: 60px;
+    }
+    .desc-01 {
+      line-height: 26px;
+      margin: 25px 0px 45px 0px;
+    }
+  }
+}
+// days section responsive
+@media (max-width: 933px) {
+  .days {
+    padding: 70px 10px;
+    &-card {
+      padding: 20px;
+      .heading-02 {
+        line-height: 40px;
+      }
+      .desc-01 {
+        line-height: 26px;
+        margin: 20px 0px 35px 0px;
+      }
+    }
+  }
+}
+@media (max-width: 428px) {
+  .days {
+    padding: 40px 0px;
+    &-card {
+      .heading-02 {
+        line-height: 30px;
+      }
+      .desc-01 {
+        margin: 15px 0px 35px 0px;
+      }
+    }
+  }
+}
 // contact form section
 .contact {
   padding: 130px 0px;
