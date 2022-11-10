@@ -137,10 +137,16 @@ a {
 }
 
 .btn-yellow {
-  padding: 11px 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 15px 30px;
   background-color: #fdca31;
   border-radius: 50px;
   color: #000;
+  font-size: 15px;
 }
 
 .contact {
@@ -148,7 +154,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 1920px;
+  width: 100%;
   min-width: 300px;
   border: 1px solid red;
 }
@@ -164,15 +170,26 @@ a {
   padding: 60px 0px;
 }
 
-.contact-form .heading-01 {
-  color: #fff;
-}
-
 .contact-icons {
   margin-top: 50px;
 }
 
+.contact-icons .fab {
+  margin: 0px 0px 0px 41px;
+  padding: 10px 11px;
+  background: #949494;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-icons .fab:hover {
+  background-color: #fdca31;
+}
+
 .footer {
+  width: 100%;
   min-width: 300px;
   background-color: #f4f5f6;
   padding: 130px 0px 10px;
