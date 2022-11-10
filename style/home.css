@@ -136,17 +136,37 @@ a {
   text-decoration: none;
 }
 
-.btn-yellow {
+.btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 160%;
-  padding: 15px 30px;
-  background-color: #fdca31;
-  border-radius: 50px;
-  color: #000;
+  padding: 12px 30px;
   font-size: 15px;
+  border-radius: 50px;
+}
+
+.btn-yellow {
+  background-color: #f7ac25;
+  color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-yellow:hover {
+  background-color: #949494;
+  color: #fff;
+}
+
+.btn-red {
+  background-color: #eb342e;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: #949494;
+  color: #fff;
 }
 
 .contact {
@@ -156,7 +176,6 @@ a {
           justify-content: center;
   width: 100%;
   min-width: 300px;
-  border: 1px solid red;
 }
 
 .contact-form {
@@ -167,16 +186,46 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  padding: 60px 0px;
+  padding: 130px 0px;
+}
+
+.contact-form .heading-01 {
+  margin: 0px 0px 30px 0px;
+}
+
+.contact-form .email {
+  position: relative;
+  max-width: 44%;
+  margin: auto;
+}
+
+.contact-form .email__input {
+  width: 100%;
+  padding: 19px 0px 22px 21px;
+  border-radius: 50px;
+  color: #949494;
+}
+
+.contact-form .email__btn {
+  position: absolute;
+  top: 10%;
+  right: -3%;
 }
 
 .contact-icons {
   margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact-icons .fab {
-  margin: 0px 0px 0px 41px;
-  padding: 10px 11px;
+  margin: 0px 0px 0px 30px;
+  padding: 7px;
+  font-size: 15px;
   background: #949494;
   color: #fff;
   border-radius: 50px;
