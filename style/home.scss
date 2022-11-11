@@ -51,6 +51,7 @@ body {
 // hero section
 .hero {
   max-width: 1920px;
+  min-width: 300px;
   height: 120vh;
   max-height: 1430px;
   overflow: hidden;
@@ -60,6 +61,44 @@ body {
     background-image: url('../bg/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+// hero section respomnsive
+@media (max-width: 1200px) {
+  .hero {
+    height: 100vh;
+    max-height: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    height: 90vh;
+    max-height: 900px;
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    height: 80vh;
+    max-height: 800px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    height: 60vh;
+    max-height: 700px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    height: 50vh;
+    max-height: 500px;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    height: 50vh;
+    max-height: 400px;
   }
 }
 // about section
@@ -68,40 +107,54 @@ body {
   padding: 130px 0px;
   &-content {
     max-width: 1560px;
-    height: auto;
     margin: 130px auto 130px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(680px, 1fr));
+    grid-gap: 3rem;
     place-items: center;
   }
-  .card-01 {
+  .card1 {
     display: flex;
     justify-content: space-between;
     grid-gap: 1.5rem;
-    &:before {
-      content: '';
+    margin-left: 50px;
+    &__img {
+      margin-top: 60px;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: -8%;
+        right: -9%;
+        border: 2px solid rgba(253, 202, 49, 1);
+        width: 90%;
+        height: 90%;
+        z-index: -1;
+        border-radius: 20px;
+      }
     }
   }
-  .card-02 {
+  .card2 {
     max-width: 679px;
+    padding: 20px;
     .heading-01 {
       line-height: 126%;
       margin: 0px;
     }
     .desc-01 {
       margin: 26px 0px 45px;
+      line-height: 160%;
     }
   }
 
   &-counter {
     max-width: 1260px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
-
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: space-between;
     .card {
       text-align: center;
-      padding: 0px 30px;
+      padding: 0px 0px;
       width: 129px;
       margin: 0 auto;
 
@@ -113,6 +166,52 @@ body {
     }
   }
 }
+// responsive about section
+@media (max-width: 1191px) {
+  .about {
+    .card1 {
+      margin: 0px 50px 0px 60px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    padding: 100px 0px;
+    &-content {
+      margin: 100px auto;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+  }
+}
+@media (max-width: 790px) {
+  .about {
+    padding: 70px 0px;
+    &-content {
+      margin: 50px auto;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    &-counter {
+      grid-template-columns: 200px 200px;
+      justify-content: space-around;
+      grid-row-gap: 3rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    &-content {
+      margin: 20px auto 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .card1 {
+      margin: 0px 20px 0px 5px;
+    }
+    &-counter {
+      grid-template-columns: 150px 150px;
+    }
+  }
+}
+
 // days section
 .days {
   max-width: 1920px;
@@ -124,8 +223,7 @@ body {
   &-card {
     max-width: 598px;
     padding: 40px 50px;
-    margin-left: auto;
-    margin-right: 5 0px;
+    margin: 0px 120px 0px auto;
     border-radius: 20px;
     background: rgba(35, 7, 6, 0.655);
     .heading-02 {
@@ -144,6 +242,7 @@ body {
     padding: 70px 0px;
     &-card {
       padding: 20px;
+      margin: 0 auto;
       .heading-02 {
         line-height: 40px;
       }
@@ -151,6 +250,13 @@ body {
         line-height: 26px;
         margin: 20px 0px 35px 0px;
       }
+    }
+  }
+}
+@media (max-width: 637px) {
+  .days {
+    &-card {
+      border-radius: 0px;
     }
   }
 }
@@ -164,207 +270,6 @@ body {
       .desc-01 {
         margin: 15px 0px 35px 0px;
       }
-    }
-  }
-}
-// contact form section
-.contact {
-  padding: 130px 0px;
-  justify-content: center;
-  width: 100%;
-  min-width: 300px;
-  &-form {
-    background-image: url('../bg/contact.jpg');
-    max-width: 1560px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 40px;
-    padding: 130px 0px;
-    .heading-01 {
-      margin: 0px 0px 30px 0px;
-    }
-    .email {
-      position: relative;
-      max-width: 44%;
-      margin: auto;
-      &__input {
-        width: 100%;
-        padding: 19px 0px 19px 21px;
-        border-radius: 50px;
-        color: #949494;
-      }
-      &__btn {
-        position: absolute;
-        top: 12%;
-        right: -3%;
-      }
-    }
-  }
-  &-icons {
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    .fab {
-      margin: 0px 0px 0px 30px;
-      padding: 7px;
-      font-size: 15px;
-      background: #949494;
-      color: #fff;
-      border-radius: 50px;
-      transition: all 0.5s;
-      &:hover {
-        background-color: rgba(253, 202, 49, 1);
-      }
-    }
-  }
-}
-// responsive contact form
-@media (max-width: 1560px) {
-  .contact-form {
-    border-radius: 0px;
-  }
-}
-@media (max-width: 900px) {
-  .contact {
-    padding: 100px 0px;
-    &-form {
-      width: 100%;
-      padding: 100px 0px;
-      border-radius: 0px;
-      .email {
-        position: relative;
-        max-width: 50%;
-        margin: auto;
-        &__input {
-          padding: 15px 0px 15px 21px;
-        }
-        &__btn {
-          top: 10%;
-          right: -5%;
-          padding: 10px 20px;
-        }
-      }
-    }
-    &-icons {
-      margin-top: 40px;
-      .fab {
-        margin: 0px 0px 0px 20px;
-      }
-    }
-  }
-}
-@media (max-width: 690px) {
-  .contact {
-    padding: 80px 0px;
-    &-form {
-      padding: 80px 0px;
-      .email {
-        max-width: 60%;
-        &__input {
-          padding: 12px 0px 12px 15px;
-        }
-        &__btn {
-          position: absolute;
-          top: 8%;
-          right: -3%;
-          padding: 8px 11px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 490px) {
-  .contact {
-    padding: 70px 0px;
-    &-form {
-      padding: 60px 0px;
-      .heading-01 {
-        margin: 0px 0px 10px 0px;
-      }
-      .email {
-        max-width: 90%;
-        &__input {
-          padding: 10px 0px 10px 10px;
-        }
-        &__btn {
-          position: absolute;
-          top: 12%;
-          right: -1%;
-          padding: 5px 10px;
-        }
-      }
-    }
-    // &-icons {
-    //   margin-top: 50px;
-    //   justify-content: center;
-    //   align-items: center;
-    //   .fab {
-    //     margin: 0px 0px 0px 30px;
-    //     padding: 7px;
-    //     font-size: 15px;
-    //     background: #949494;
-    //     color: #fff;
-    //     border-radius: 50px;
-    //     transition: all 0.5s;
-    //     &:hover {
-    //       background-color: rgba(253, 202, 49, 1);
-    //     }
-    //   }
-    // }
-  }
-}
-
-// footer section style
-.footer {
-  width: 100%;
-  min-width: 300px;
-  background-color: $bg-color;
-  padding: 130px 0px 10px;
-  &-cont {
-    max-width: 1560px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0px 20px 60px;
-    border-bottom: 1px solid rgba(201, 201, 201, 1);
-  }
-  &-logo {
-    max-width: 420px;
-    .svg {
-      max-width: 251px;
-    }
-    .desc-01 {
-      line-height: 160%;
-    }
-  }
-  &-nav {
-    flex-wrap: wrap;
-    .ul {
-      margin: 0px 0px 0px 0px;
-      width: 197px;
-
-      &-li {
-        margin: 10px 0px;
-        list-style: none;
-        color: $text-dark-black;
-        align-items: center;
-        line-height: 160%;
-        a {
-          color: $text-dark-black;
-          &:hover {
-            text-decoration: underline;
-            color: blue;
-          }
-        }
-        img {
-          margin: 8px 10px 0px 0px;
-        }
-      }
-    }
-    .ul-li:nth-child(1) {
-      color: $text-black;
-      margin-bottom: 1.5rem;
     }
   }
 }

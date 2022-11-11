@@ -4,11 +4,11 @@
 .heading-01, .heading-02, .heading-03 {
   font-style: normal;
   font-weight: 400;
-  font-family: "Sriracha";
+  font-family: 'Sriracha';
 }
 
 .heading-01 {
-  font-size: clamp(1.5rem, 2.5vw, 3.4rem);
+  font-size: clamp(1.8rem, 2.5vw, 3.4rem);
 }
 
 .heading-02 {
@@ -30,7 +30,7 @@
 }
 
 .desc-01, .desc-02 {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
 }
 
@@ -74,5 +74,222 @@
 
 .t-black {
   color: black;
+}
+
+.contact {
+  padding: 130px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-width: 300px;
+}
+
+.contact-form {
+  background-image: url("../bg/contact.jpg");
+  max-width: 1560px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+  padding: 130px 0px;
+}
+
+.contact-form .heading-01 {
+  margin: 0px 0px 30px 0px;
+}
+
+.contact-form .email {
+  position: relative;
+  max-width: 44%;
+  margin: auto;
+}
+
+.contact-form .email__input {
+  width: 100%;
+  padding: 19px 0px 19px 21px;
+  border-radius: 50px;
+  color: #949494;
+}
+
+.contact-form .email__btn {
+  position: absolute;
+  top: 12%;
+  right: -3%;
+}
+
+.contact-icons {
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icons .fab {
+  margin: 0px 0px 0px 30px;
+  padding: 7px;
+  font-size: 15px;
+  background: #949494;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact-icons .fab:hover {
+  background-color: #fdca31;
+}
+
+@media (max-width: 1560px) {
+  .contact-form {
+    border-radius: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 100px 0px;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 100px 0px;
+    border-radius: 0px;
+  }
+  .contact-form .email {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+  }
+  .contact-form .email__input {
+    padding: 15px 0px 15px 21px;
+  }
+  .contact-form .email__btn {
+    top: 10%;
+    right: -5%;
+    padding: 10px 20px;
+  }
+  .contact-icons {
+    margin-top: 40px;
+  }
+  .contact-icons .fab {
+    margin: 0px 0px 0px 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .contact {
+    padding: 80px 0px;
+  }
+  .contact-form {
+    padding: 80px 0px;
+  }
+  .contact-form .email {
+    max-width: 60%;
+  }
+  .contact-form .email__input {
+    padding: 12px 0px 12px 15px;
+  }
+  .contact-form .email__btn {
+    position: absolute;
+    top: 8%;
+    right: -3%;
+    padding: 8px 11px;
+  }
+}
+
+@media (max-width: 490px) {
+  .contact {
+    padding: 70px 0px;
+  }
+  .contact-form {
+    padding: 60px 0px;
+  }
+  .contact-form .heading-01 {
+    margin: 0px 0px 10px 0px;
+  }
+  .contact-form .email {
+    max-width: 90%;
+  }
+  .contact-form .email__input {
+    padding: 10px 0px 10px 10px;
+  }
+  .contact-form .email__btn {
+    position: absolute;
+    top: 12%;
+    right: -1%;
+    padding: 5px 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  min-width: 300px;
+  background-color: #f4f5f6;
+  padding: 130px 0px 10px;
+}
+
+.footer-cont {
+  max-width: 1560px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 20px 60px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.footer-logo {
+  max-width: 420px;
+}
+
+.footer-logo .svg {
+  max-width: 251px;
+}
+
+.footer-logo .desc-01 {
+  line-height: 160%;
+}
+
+.footer-nav {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-nav .ul {
+  margin: 0px 0px 0px 0px;
+  width: 197px;
+}
+
+.footer-nav .ul-li {
+  margin: 10px 0px;
+  list-style: none;
+  color: #010f1c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 160%;
+}
+
+.footer-nav .ul-li a {
+  color: #010f1c;
+}
+
+.footer-nav .ul-li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.footer-nav .ul-li img {
+  margin: 8px 10px 0px 0px;
+}
+
+.footer-nav .ul-li:nth-child(1) {
+  color: #000;
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=common.css.map */
