@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+// text color
+$text-black: #000;
+$text-dark-black: #010f1c;
+$text-white: #fff;
+$text-dark-white: #949494;
+// list li dot color
+$list-li-color: #9e559e;
+// button color
+$btn-yellow: #f7ac25;
+$btn-red: rgba(235, 52, 46, 1);
+$btn-dark: #949494;
+// bg color
+$bg-color: #f4f5f6;
 
 .heading {
   &-01,
@@ -8,7 +22,7 @@
   &-03 {
     font-style: normal;
     font-weight: 400;
-    font-family: 'Sriracha';
+    font-family: "Sriracha";
   }
   &-01 {
     font-size: clamp(1.5rem, 2.5vw, 3.4rem);
@@ -43,7 +57,7 @@
   }
   &-01,
   &-02 {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     font-style: normal;
   }
   //   &-03 {
@@ -92,9 +106,11 @@
 .d-flex {
   display: flex;
 }
-.t-white {
-  color: white;
-}
-.t-black {
-  color: black;
+.t {
+  &-white {
+    color: white;
+  }
+  &-black {
+    color: black;
+  }
 }

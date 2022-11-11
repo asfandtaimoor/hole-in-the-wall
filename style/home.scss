@@ -24,12 +24,12 @@ a {
   padding: 12px 30px;
   font-size: 15px;
   border-radius: 50px;
+  transition: all 0.5s;
 }
 .btn-yellow {
   @extend %btn;
   background-color: $btn-yellow;
   color: $text-black;
-  transition: all 0.5s;
   &:hover {
     background-color: $btn-dark;
     color: $text-white;
@@ -48,23 +48,54 @@ body {
   margin: 0%;
   padding: 0%;
 }
-
+// hero section
+.hero {
+  max-width: 1920px;
+  height: 120vh;
+  max-height: 1430px;
+  overflow: hidden;
+  &-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../bg/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 // about section
 .about {
   min-width: 300px;
   padding: 130px 0px;
   &-content {
     max-width: 1560px;
-    .card-01 {
-      max-width: 810px;
-    }
-    .card-02 {
-      max-width: 679px;
+    height: auto;
+    margin: 130px auto 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 4rem;
+    place-items: center;
+  }
+  .card-01 {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 1.5rem;
+    &:before {
+      content: '';
     }
   }
+  .card-02 {
+    max-width: 679px;
+    .heading-01 {
+      line-height: 126%;
+      margin: 0px;
+    }
+    .desc-01 {
+      margin: 26px 0px 45px;
+    }
+  }
+
   &-counter {
     max-width: 1260px;
-    justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(298px, 1fr));
 
@@ -73,22 +104,20 @@ body {
       padding: 0px 30px;
       width: 129px;
       margin: 0 auto;
-      .heading-01 {
-        margin: 0px;
-      }
-      .desc-01 {
-        margin: 0;
-        color: #010f1c;
+
+      .desc {
+        &-01 {
+          color: #010f1c;
+        }
       }
     }
   }
 }
-
 // days section
 .days {
   max-width: 1920px;
   min-width: 300px;
-  padding: 112px;
+  padding: 112px 0px;
   background-image: url('../bg/days.jpg');
   background-position: center;
   background-size: cover;
@@ -96,6 +125,7 @@ body {
     max-width: 598px;
     padding: 40px 50px;
     margin-left: auto;
+    margin-right: 5 0px;
     border-radius: 20px;
     background: rgba(35, 7, 6, 0.655);
     .heading-02 {
@@ -111,7 +141,7 @@ body {
 // days section responsive
 @media (max-width: 933px) {
   .days {
-    padding: 70px 10px;
+    padding: 70px 0px;
     &-card {
       padding: 20px;
       .heading-02 {
