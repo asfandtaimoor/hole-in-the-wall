@@ -15,7 +15,13 @@ $btn-red: rgba(235, 52, 46, 1);
 $btn-dark: #949494;
 // bg color
 $bg-color: #f4f5f6;
-
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
 .heading {
   &-01,
   &-02,
@@ -112,6 +118,35 @@ $bg-color: #f4f5f6;
   }
   &-black {
     color: black;
+  }
+}
+%btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 12px 30px;
+  font-size: 15px;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+.btn-yellow {
+  @extend %btn;
+  background-color: $btn-yellow;
+  color: $text-black;
+  &:hover {
+    background-color: $btn-dark;
+    color: $text-white;
+  }
+}
+.btn-red {
+  @extend %btn;
+  background-color: $btn-red;
+  color: $text-white;
+  &:hover {
+    background-color: $btn-dark;
+    color: $text-white;
   }
 }
 // contact form section
