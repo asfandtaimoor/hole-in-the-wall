@@ -5,6 +5,10 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  min-width: 300px;
+}
+
 .btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;
@@ -426,18 +430,21 @@ body {
 
 .resturent-container .card .list {
   border-top: 1px solid #ccc;
-  padding: 15px 19px 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 15px 0px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .resturent-container .card .list li {
   color: #9e559e;
+  margin: 0px 0px 0px 23px;
 }
 
 .resturent-container .card .list li p {
   color: #4d5765;
+  white-space: nowrap;
+  word-spacing: -2px;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 1280px) {
@@ -486,10 +493,10 @@ body {
   }
 }
 
-@media (min-width: 653px) {
+@media (max-width: 653px) {
   .resturent-container .card {
     max-width: 90%;
-    width: 95%;
+    width: 90%;
     min-width: 260px;
   }
 }
