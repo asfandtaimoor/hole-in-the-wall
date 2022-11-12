@@ -22,6 +22,104 @@ a {
 .wrapper {
   min-width: 300px;
 }
+
+// navbar
+.navbar {
+  max-width: 1920px;
+  min-width: 300px;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 36px 0px 26px;
+
+  &__logo {
+    max-width: 251px;
+    width: 25vw;
+    min-width: 150px;
+  }
+  &-nav {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .li {
+      list-style: none;
+      line-height: 160%;
+      padding: 20px;
+      .a {
+        white-space: nowrap;
+        transition: all 0.5s;
+        &:hover {
+          color: rgba(235, 52, 46, 1);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__serch {
+    border: none;
+    background: #fef2f1;
+    border-radius: 25px;
+    padding: 15px 40px 15px 20px;
+  }
+}
+.burgger {
+  cursor: pointer;
+  width: 70px;
+  .line {
+    margin-top: 5px;
+    height: 3px;
+    background-color: #f7ac25;
+    &__1 {
+      width: 5px;
+    }
+    &__2 {
+      width: 15px;
+    }
+    &__3 {
+      width: 30px;
+    }
+    &__4 {
+      width: 40px;
+    }
+    &__5 {
+      width: 50px;
+    }
+  }
+  &:hover .line {
+    transition: all 0.7s ease-out;
+
+    &__1 {
+      width: 60px;
+    }
+    &__2 {
+      width: 50px;
+    }
+    &__3 {
+      width: 40px;
+    }
+    &__4 {
+      width: 20px;
+    }
+    &__5 {
+      width: 5px;
+    }
+  }
+}
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
+}
+@media (max-width: 1240px) {
+  .navbar {
+    &-nav {
+      display: none;
+    }
+  }
+}
 %btn {
   font-family: 'Roboto';
   font-style: normal;
@@ -190,7 +288,7 @@ body {
   width: 100%;
   min-width: 300px;
   &-form {
-    background: url('../bg/contact1.png');
+    background: url('../bg/contact.avif');
     max-width: 1560px;
     width: 100%;
     background-position: center;
@@ -210,6 +308,7 @@ body {
         padding: 19px 0px 19px 21px;
         border-radius: 50px;
         color: #949494;
+        border: none;
       }
       &__btn {
         position: absolute;

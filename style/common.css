@@ -9,6 +9,133 @@ a {
   min-width: 300px;
 }
 
+.navbar {
+  max-width: 1920px;
+  min-width: 300px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36px 0px 26px;
+}
+
+.navbar__logo {
+  max-width: 251px;
+  width: 25vw;
+  min-width: 150px;
+}
+
+.navbar-nav {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-nav .li {
+  list-style: none;
+  line-height: 160%;
+  padding: 20px;
+}
+
+.navbar-nav .li .a {
+  white-space: nowrap;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-nav .li .a:hover {
+  color: #eb342e;
+  text-decoration: underline;
+}
+
+.navbar__serch {
+  border: none;
+  background: #fef2f1;
+  border-radius: 25px;
+  padding: 15px 40px 15px 20px;
+}
+
+.burgger {
+  cursor: pointer;
+  width: 70px;
+}
+
+.burgger .line {
+  margin-top: 5px;
+  height: 3px;
+  background-color: #f7ac25;
+}
+
+.burgger .line__1 {
+  width: 5px;
+}
+
+.burgger .line__2 {
+  width: 15px;
+}
+
+.burgger .line__3 {
+  width: 30px;
+}
+
+.burgger .line__4 {
+  width: 40px;
+}
+
+.burgger .line__5 {
+  width: 50px;
+}
+
+.burgger:hover .line {
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+.burgger:hover .line__1 {
+  width: 60px;
+}
+
+.burgger:hover .line__2 {
+  width: 50px;
+}
+
+.burgger:hover .line__3 {
+  width: 40px;
+}
+
+.burgger:hover .line__4 {
+  width: 20px;
+}
+
+.burgger:hover .line__5 {
+  width: 5px;
+}
+
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  .navbar-nav {
+    display: none;
+  }
+}
+
 .btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;
@@ -165,7 +292,7 @@ body {
 }
 
 .contact-form {
-  background: url("../bg/contact1.png");
+  background: url("../bg/contact.avif");
   max-width: 1560px;
   width: 100%;
   background-position: center;
@@ -190,6 +317,7 @@ body {
   padding: 19px 0px 19px 21px;
   border-radius: 50px;
   color: #949494;
+  border: none;
 }
 
 .contact-form .email__btn {
