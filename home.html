@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>common</title>
     <!-- common css file  -->
     <link rel="stylesheet" href="./style/common.css" />
     <!-- css style sheet -->
@@ -13,10 +13,10 @@
   <body>
     <div class="wrapper">
       <!-- navbar -->
-      <section class="navbar w-100 m-auto">
-        <img class="navbar__logo" src="./logo/logo.svg" alt="logo" />
+      <header class="header m-auto d-flex">
+        <img class="header__logo" src="./logo/logo.svg" alt="logo" />
 
-        <ul class="navbar-nav">
+        <ul class="header-nav d-flex">
           <li class="li"><a class="a desc-01" href="#">Home</a></li>
           <li class="li"><a class="a desc-01" href="#">Restaurants</a></li>
           <li class="li">
@@ -26,21 +26,23 @@
             <a class="a desc-01" href="#">Discover Districts</a>
           </li>
           <li class="li"><a class="a desc-01" href="#">Contact us</a></li>
-          <input
-            class="desc-01 navbar__serch"
-            type="text"
-            placeholder="Search"
-          />
+          <!-- <li>
+            <input
+              class="desc-01 navbar__serch"
+              type="text"
+              placeholder="Search"
+            />
+            <a href="#"><img src="./icon/serch.svg" alt="" /></a>
+          </li> -->
         </ul>
 
         <div class="burgger">
-          <div class="line line__1"></div>
-          <div class="line line__2"></div>
-          <div class="line line__3"></div>
-          <div class="line line__4"></div>
-          <div class="line line__5"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-      </section>
+      </header>
       <!-- HOME SECTION  -->
       <!-- ABOUT US SECTION -->
       <div class="d" style="background: #000; height: 60vh"></div>
@@ -119,6 +121,7 @@
           </p>
         </div>
       </footer>
+      <script src="./js/nav.js"></script>
     </div>
   </body>
 </html>
