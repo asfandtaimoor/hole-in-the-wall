@@ -9,6 +9,7 @@ a {
   min-width: 300px;
 }
 
+<<<<<<< HEAD
 .header {
   width: 100%;
   max-width: 1920px;
@@ -220,6 +221,8 @@ a {
   min-width: 300px;
 }
 
+=======
+>>>>>>> restaurants
 .btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;
@@ -376,7 +379,11 @@ body {
 }
 
 .contact-form {
+<<<<<<< HEAD
   background: url("../bg/contact.avif");
+=======
+  background: url("../bg/contact1.avif");
+>>>>>>> restaurants
   max-width: 1560px;
   width: 100%;
   background-position: center;
@@ -419,7 +426,7 @@ body {
           align-items: center;
 }
 
-.contact-icons .fab {
+.contact-icons img {
   margin: 0px 0px 0px 30px;
   padding: 7px;
   font-size: 15px;
@@ -430,7 +437,7 @@ body {
   transition: all 0.5s;
 }
 
-.contact-icons .fab:hover {
+.contact-icons img:hover {
   background-color: #fdca31;
 }
 
@@ -574,7 +581,7 @@ body {
   color: blue;
 }
 
-.footer-nav .ul-li img {
+.footer-nav .ul-li a img {
   margin: 8px 10px 0px 0px;
 }
 
@@ -594,7 +601,7 @@ body {
 .hero-img {
   width: 100%;
   height: 100%;
-  background-image: url("../bg/hero.png");
+  background-image: url("../bg/main-page.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -777,7 +784,7 @@ body {
   max-width: 1920px;
   min-width: 300px;
   padding: 112px 0px;
-  background-image: url("../bg/days.jpg");
+  background-image: url("../bg/days1.avif");
   background-position: center;
   background-size: cover;
 }

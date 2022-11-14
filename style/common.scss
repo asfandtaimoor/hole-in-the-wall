@@ -19,7 +19,6 @@ $bg-color: #f4f5f6;
 a {
   text-decoration: none;
 }
-
 .wrapper {
   min-width: 300px;
 }
@@ -190,6 +189,10 @@ a {
   min-width: 300px;
 }
 
+.wrapper {
+  min-width: 300px;
+}
+
 %btn {
   font-family: 'Roboto';
   font-style: normal;
@@ -219,7 +222,6 @@ a {
     color: $text-white;
   }
 }
-
 body {
   margin: 0%;
   padding: 0%;
@@ -391,7 +393,7 @@ body {
     margin-top: 50px;
     justify-content: center;
     align-items: center;
-    .fab {
+    img {
       margin: 0px 0px 0px 30px;
       padding: 7px;
       font-size: 15px;
@@ -541,9 +543,9 @@ body {
             text-decoration: underline;
             color: blue;
           }
-        }
-        img {
-          margin: 8px 10px 0px 0px;
+          img {
+            margin: 8px 10px 0px 0px;
+          }
         }
       }
     }
