@@ -19,8 +19,7 @@ $bg-color: #f4f5f6;
 a {
   text-decoration: none;
 }
-<<<<<<< HEAD
-=======
+
 .wrapper {
   min-width: 300px;
 }
@@ -220,7 +219,7 @@ a {
     color: $text-white;
   }
 }
->>>>>>> common
+
 body {
   margin: 0%;
   padding: 0%;
@@ -352,10 +351,7 @@ body {
     color: $text-white;
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> common
 // contact form section
 .contact {
   padding: 130px 0px;
@@ -363,11 +359,7 @@ body {
   width: 100%;
   min-width: 300px;
   &-form {
-<<<<<<< HEAD
-    background-image: url('../bg/contact.jpg');
-=======
     background: url('../bg/contact.avif');
->>>>>>> common
     max-width: 1560px;
     width: 100%;
     background-position: center;
@@ -387,10 +379,6 @@ body {
         padding: 19px 0px 19px 21px;
         border-radius: 50px;
         color: #949494;
-<<<<<<< HEAD
-=======
-        border: none;
->>>>>>> common
       }
       &__btn {
         position: absolute;
@@ -403,11 +391,7 @@ body {
     margin-top: 50px;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     .fab {
-=======
-    img {
->>>>>>> common
       margin: 0px 0px 0px 30px;
       padding: 7px;
       font-size: 15px;

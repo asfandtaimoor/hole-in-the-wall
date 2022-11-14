@@ -5,8 +5,6 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
 .wrapper {
   min-width: 300px;
 }
@@ -255,7 +253,6 @@ a {
   color: #fff;
 }
 
->>>>>>> common
 body {
   margin: 0%;
   padding: 0%;
@@ -379,11 +376,7 @@ body {
 }
 
 .contact-form {
-<<<<<<< HEAD
-  background-image: url("../bg/contact.jpg");
-=======
   background: url("../bg/contact.avif");
->>>>>>> common
   max-width: 1560px;
   width: 100%;
   background-position: center;
@@ -408,10 +401,6 @@ body {
   padding: 19px 0px 19px 21px;
   border-radius: 50px;
   color: #949494;
-<<<<<<< HEAD
-=======
-  border: none;
->>>>>>> common
 }
 
 .contact-form .email__btn {
@@ -430,11 +419,7 @@ body {
           align-items: center;
 }
 
-<<<<<<< HEAD
 .contact-icons .fab {
-=======
-.contact-icons img {
->>>>>>> common
   margin: 0px 0px 0px 30px;
   padding: 7px;
   font-size: 15px;
@@ -445,11 +430,7 @@ body {
   transition: all 0.5s;
 }
 
-<<<<<<< HEAD
 .contact-icons .fab:hover {
-=======
-.contact-icons img:hover {
->>>>>>> common
   background-color: #fdca31;
 }
 

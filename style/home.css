@@ -5,15 +5,15 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
 .wrapper {
   min-width: 300px;
 }
 
-.navbar {
+.header {
+  width: 100%;
   max-width: 1920px;
   min-width: 300px;
+  height: 110px;
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,18 +23,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 36px 0px 26px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  z-index: 999;
 }
 
-.navbar__logo {
+.header__logo {
   max-width: 251px;
   width: 25vw;
   min-width: 150px;
 }
 
-.navbar-nav {
+.header-nav {
   padding: 0px;
   margin: 0px;
   display: -webkit-box;
@@ -46,26 +46,28 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 999;
 }
 
-.navbar-nav .li {
+.header-nav .li {
   list-style: none;
   line-height: 160%;
-  padding: 20px;
+  padding: 10px;
 }
 
-.navbar-nav .li .a {
+.header-nav .li .a {
   white-space: nowrap;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  padding: 10px;
 }
 
-.navbar-nav .li .a:hover {
+.header-nav .li .a:hover {
   color: #eb342e;
   text-decoration: underline;
 }
 
-.navbar__serch {
+.header__serch {
   border: none;
   background: #fef2f1;
   border-radius: 25px;
@@ -74,7 +76,7 @@ a {
 
 .burgger {
   cursor: pointer;
-  width: 60px;
+  width: 50px;
 }
 
 .burgger .line {
@@ -167,22 +169,55 @@ a {
   background-color: red;
 }
 
-@media (min-width: 1240px) {
-  .navbar-nav {
-    display: block;
+@media (max-width: 1240px) {
+  .header-nav {
+    position: absolute;
+    top: 108px;
+    left: 0px;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 30px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
-  .burgger {
-    display: none;
+  .header-nav .li {
+    list-style: none;
+    line-height: 160%;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .header-nav .li .a {
+    white-space: nowrap;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 10px;
+  }
+  .header-nav .li .a:hover {
+    color: #eb342e;
+    text-decoration: underline;
   }
 }
 
-@media (max-width: 1240px) {
-  .navbar-nav {
-    display: none;
-  }
-  .burgger {
-    display: block;
-  }
+.menu .header-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  visibility: visible;
+  height: 100vh;
+  min-width: 300px;
 }
 
 .btn-yellow, .btn-red {
@@ -218,7 +253,6 @@ a {
   color: #fff;
 }
 
->>>>>>> common
 body {
   margin: 0%;
   padding: 0%;
@@ -342,11 +376,7 @@ body {
 }
 
 .contact-form {
-<<<<<<< HEAD
-  background-image: url("../bg/contact.jpg");
-=======
   background: url("../bg/contact.avif");
->>>>>>> common
   max-width: 1560px;
   width: 100%;
   background-position: center;
@@ -371,10 +401,6 @@ body {
   padding: 19px 0px 19px 21px;
   border-radius: 50px;
   color: #949494;
-<<<<<<< HEAD
-=======
-  border: none;
->>>>>>> common
 }
 
 .contact-form .email__btn {
@@ -393,11 +419,7 @@ body {
           align-items: center;
 }
 
-<<<<<<< HEAD
 .contact-icons .fab {
-=======
-.contact-icons img {
->>>>>>> common
   margin: 0px 0px 0px 30px;
   padding: 7px;
   font-size: 15px;
@@ -408,11 +430,7 @@ body {
   transition: all 0.5s;
 }
 
-<<<<<<< HEAD
 .contact-icons .fab:hover {
-=======
-.contact-icons img:hover {
->>>>>>> common
   background-color: #fdca31;
 }
 
@@ -564,7 +582,6 @@ body {
   color: #000;
   margin-bottom: 1.5rem;
 }
-<<<<<<< HEAD
 
 .hero {
   max-width: 1920px;
@@ -817,6 +834,4 @@ body {
     margin: 15px 0px 35px 0px;
   }
 }
-=======
->>>>>>> common
 /*# sourceMappingURL=home.css.map */
