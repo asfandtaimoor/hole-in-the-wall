@@ -9,6 +9,227 @@ a {
   min-width: 300px;
 }
 
+.header {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 300px;
+  height: 110px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 999;
+}
+
+.header__logo {
+  max-width: 251px;
+  width: 25vw;
+  min-width: 150px;
+}
+
+.header-nav {
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+}
+
+.header-nav .li {
+  list-style: none;
+  line-height: 160%;
+  padding: 10px;
+}
+
+.header-nav .li .a {
+  white-space: nowrap;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
+}
+
+.header-nav .li .a:hover {
+  color: #eb342e;
+  text-decoration: underline;
+}
+
+.header__serch {
+  border: none;
+  background: #fef2f1;
+  border-radius: 25px;
+  padding: 15px 40px 15px 20px;
+}
+
+.burgger {
+  cursor: pointer;
+  width: 50px;
+}
+
+.burgger .line {
+  margin-top: 5px;
+  height: 3px;
+  background-color: #f7ac25;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.burgger .line:nth-child(1) {
+  width: 5px;
+}
+
+.burgger .line:nth-child(2) {
+  width: 20px;
+}
+
+.burgger .line:nth-child(3) {
+  width: 30px;
+}
+
+.burgger .line:nth-child(4) {
+  width: 25px;
+}
+
+.burgger:hover .line:nth-child(1) {
+  width: 25px;
+}
+
+.burgger:hover .line:nth-child(2) {
+  width: 30px;
+}
+
+.burgger:hover .line:nth-child(3) {
+  width: 25px;
+}
+
+.burgger:hover .line:nth-child(4) {
+  width: 5px;
+}
+
+.close {
+  cursor: pointer;
+  width: 60px;
+}
+
+.close .line {
+  margin-top: 5px;
+  height: 3px;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.close .line:nth-child(1) {
+  width: 30px;
+  -webkit-transform: rotate(-40deg) translate(-6px);
+          transform: rotate(-40deg) translate(-6px);
+}
+
+.close .line:nth-child(2) {
+  display: none;
+}
+
+.close .line:nth-child(3) {
+  display: none;
+}
+
+.close .line:nth-child(4) {
+  width: 30px;
+  -webkit-transform: rotate(40deg) translate(-6px);
+          transform: rotate(40deg) translate(-6px);
+}
+
+.close:hover .line:nth-child(1) {
+  width: 30px;
+  background-color: red;
+}
+
+.close:hover .line:nth-child(2) {
+  display: none;
+}
+
+.close:hover .line:nth-child(3) {
+  display: none;
+}
+
+.close:hover .line:nth-child(4) {
+  width: 30px;
+  background-color: red;
+}
+
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  .header-nav {
+    position: absolute;
+    top: 108px;
+    left: 0px;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 30px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    visibility: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .header-nav .li {
+    list-style: none;
+    line-height: 160%;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .header-nav .li .a {
+    white-space: nowrap;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 10px;
+  }
+  .header-nav .li .a:hover {
+    color: #eb342e;
+    text-decoration: underline;
+  }
+}
+
+.menu .header-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  visibility: visible;
+  height: 100vh;
+  min-width: 300px;
+}
+
+.wrapper {
+  min-width: 300px;
+}
+
 .btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;

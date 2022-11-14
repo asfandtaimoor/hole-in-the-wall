@@ -13,6 +13,40 @@
   <body>
     <div class="wrapper">
       <!-- nav section  -->
+      <header class="header m-auto d-flex">
+        <img class="header__logo" src="./logo/logo.svg" alt="logo" />
+
+        <ul class="header-nav d-flex">
+          <li class="li"><a class="a desc-01" href="home.html">Home</a></li>
+          <li class="li">
+            <a class="a desc-01" href="restaurants.html">Restaurants</a>
+          </li>
+          <li class="li">
+            <a class="a desc-01" href="#">Discover Cuisines</a>
+          </li>
+          <li class="li">
+            <a class="a desc-01" href="#">Discover Districts</a>
+          </li>
+          <li class="li">
+            <a class="a desc-01" href="#contact">Contact us</a>
+          </li>
+          <!-- <li>
+            <input
+              class="desc-01 navbar__serch"
+              type="text"
+              placeholder="Search"
+            />
+            <a href="#"><img src="./icon/serch.svg" alt="" /></a>
+          </li> -->
+        </ul>
+
+        <div class="burgger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </header>
       <!-- HOME SECTION  -->
       <section class="resthero m-auto w-100">
         <div class="resthero-img"></div>
@@ -296,7 +330,7 @@
         </div>
       </div>
       <!-- CONTACT EMAIL SUBSCRIBE SECTION -->
-      <section class="contact d-flex m-auto">
+      <section id="contact" class="contact d-flex m-auto">
         <div class="contact-form w-100 text-center">
           <h2 class="heading-01 t-white">
             Stay updated on the latest local bites
@@ -334,8 +368,12 @@
           <div class="footer-nav d-flex">
             <ul class="ul p-00">
               <li class="ul-li desc-02">Menu</li>
-              <li class="ul-li"><a class="desc-01" href="#">Home</a></li>
-              <li class="ul-li"><a class="desc-01" href="#">Restaurants</a></li>
+              <li class="ul-li">
+                <a class="desc-01" href="home.html">Home</a>
+              </li>
+              <li class="ul-li">
+                <a class="desc-01" href="restaurants.html">Restaurants</a>
+              </li>
               <li class="ul-li">
                 <a class="desc-01" href="#">Discover Cuisines</a>
               </li>
@@ -346,15 +384,31 @@
             <ul class="ul p-00">
               <li class="ul-li desc-02">Contact Us</li>
               <li class="ul-li desc-01 d-flex">
-                <div><img src="./icon/location.svg" alt="" width="12px" /></div>
+                <div>
+                  <img
+                    class="icon"
+                    src="./icon/location.svg"
+                    alt=""
+                    width="12px"
+                  />
+                </div>
                 222 W Foothill Blvd, Claremont, CA 91711
               </li>
               <li class="ul-li desc-01 d-flex">
-                <div><img src="./icon/phone.svg" alt="" width="12px" /></div>
+                <div>
+                  <img
+                    class="icon"
+                    src="./icon/phone.svg"
+                    alt=""
+                    width="12px"
+                  />
+                </div>
                 (256) 550-6990
               </li>
               <li class="ul-li desc-01 d-flex">
-                <div><img src="./icon/msg.svg" alt="" width="12px" /></div>
+                <div>
+                  <img class="icon" src="./icon/msg.svg" alt="" width="12px" />
+                </div>
                 info@mail.com
               </li>
             </ul>

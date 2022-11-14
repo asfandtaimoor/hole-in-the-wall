@@ -9,7 +9,6 @@ a {
   min-width: 300px;
 }
 
-<<<<<<< HEAD
 .header {
   width: 100%;
   max-width: 1920px;
@@ -170,6 +169,12 @@ a {
   background-color: red;
 }
 
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
+}
+
 @media (max-width: 1240px) {
   .header-nav {
     position: absolute;
@@ -221,8 +226,10 @@ a {
   min-width: 300px;
 }
 
-=======
->>>>>>> restaurants
+.wrapper {
+  min-width: 300px;
+}
+
 .btn-yellow, .btn-red {
   font-family: 'Roboto';
   font-style: normal;
@@ -379,11 +386,7 @@ body {
 }
 
 .contact-form {
-<<<<<<< HEAD
   background: url("../bg/contact.avif");
-=======
-  background: url("../bg/contact1.avif");
->>>>>>> restaurants
   max-width: 1560px;
   width: 100%;
   background-position: center;
