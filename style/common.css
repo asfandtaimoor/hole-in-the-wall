@@ -60,6 +60,8 @@ a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding: 10px;
+  font-weight: 600;
+  color: #4d5765;
 }
 
 .header-nav .li .a:hover {
@@ -167,6 +169,12 @@ a {
 .close:hover .line:nth-child(4) {
   width: 30px;
   background-color: red;
+}
+
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
 }
 
 @media (max-width: 1240px) {
@@ -569,16 +577,16 @@ body {
   line-height: 160%;
 }
 
-.footer-nav .ul-li a {
-  color: #010f1c;
+.footer-nav .ul-li .a {
+  color: #4d5765;
 }
 
-.footer-nav .ul-li a:hover {
+.footer-nav .ul-li .a:hover {
   text-decoration: underline;
   color: blue;
 }
 
-.footer-nav .ul-li a img {
+.footer-nav .ul-li .a img {
   margin: 8px 0px 0px 0px;
 }
 

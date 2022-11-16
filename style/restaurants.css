@@ -169,12 +169,6 @@ a {
   background-color: red;
 }
 
-@media (min-width: 1240px) {
-  .burgger {
-    display: none;
-  }
-}
-
 @media (max-width: 1240px) {
   .header-nav {
     position: absolute;
@@ -576,7 +570,7 @@ body {
 }
 
 .footer-nav .ul-li a {
-  color: #010f1c;
+  color: #4d5765;
 }
 
 .footer-nav .ul-li a:hover {
@@ -585,7 +579,7 @@ body {
 }
 
 .footer-nav .ul-li a img {
-  margin: 8px 10px 0px 0px;
+  margin: 8px 0px 0px 0px;
 }
 
 .footer-nav .ul-li:nth-child(1) {

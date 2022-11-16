@@ -22,7 +22,6 @@ a {
 .wrapper {
   min-width: 300px;
 }
-
 // navbar
 .header {
   width: 100%;
@@ -57,6 +56,8 @@ a {
         white-space: nowrap;
         transition: all 0.5s;
         padding: 10px;
+        font-weight: 600;
+        color: $text-desc-color;
         &:hover {
           color: rgba(235, 52, 46, 1);
           text-decoration: underline;
@@ -71,7 +72,6 @@ a {
     padding: 15px 40px 15px 20px;
   }
 }
-
 .burgger {
   cursor: pointer;
   width: 50px;
@@ -149,6 +149,11 @@ a {
     }
   }
 }
+@media (min-width: 1240px) {
+  .burgger {
+    display: none;
+  }
+}
 @media (max-width: 1240px) {
   .header-nav {
     position: absolute;
@@ -188,7 +193,6 @@ a {
   height: 100vh;
   min-width: 300px;
 }
-
 .wrapper {
   min-width: 300px;
 }
@@ -255,7 +259,6 @@ body {
   //   }
 }
 //   description style
-
 .desc {
   &-01 {
     font-size: clamp(1rem, 1vw, 1rem);
@@ -283,7 +286,6 @@ body {
   //     font-size: clamp(1rem, 2.2vw, 2rem);
   //   }
 }
-
 .m {
   &-00 {
     margin: 0;
@@ -537,8 +539,8 @@ body {
         color: $text-dark-black;
         align-items: center;
         line-height: 160%;
-        a {
-          color: $text-dark-black;
+        .a {
+          color: $text-desc-color;
           &:hover {
             text-decoration: underline;
             color: blue;
